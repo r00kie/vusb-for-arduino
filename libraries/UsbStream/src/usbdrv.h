@@ -488,13 +488,13 @@ extern
 #if !(USB_CFG_DESCR_PROPS_DEVICE & USB_PROP_IS_RAM)
 PROGMEM
 #endif
-char usbDescriptorDevice[];
+char const usbDescriptorDevice[];
 
 extern
 #if !(USB_CFG_DESCR_PROPS_CONFIGURATION & USB_PROP_IS_RAM)
 PROGMEM
 #endif
-char usbDescriptorConfiguration[];
+char const usbDescriptorConfiguration[];
 
 #ifdef __cplusplus
 extern "C"{
@@ -503,7 +503,7 @@ extern
 #if !(USB_CFG_DESCR_PROPS_HID_REPORT & USB_PROP_IS_RAM)
 PROGMEM
 #endif
-char usbDescriptorHidReport[];
+char const usbDescriptorHidReport[];
 #ifdef __cplusplus
 } // extern "C"
 #endif
@@ -512,25 +512,25 @@ extern
 #if !(USB_CFG_DESCR_PROPS_STRING_0 & USB_PROP_IS_RAM)
 PROGMEM
 #endif
-char usbDescriptorString0[];
+char const usbDescriptorString0[];
 
 extern
 #if !(USB_CFG_DESCR_PROPS_STRING_VENDOR & USB_PROP_IS_RAM)
 PROGMEM
 #endif
-int usbDescriptorStringVendor[];
+int const usbDescriptorStringVendor[];
 
 extern
 #if !(USB_CFG_DESCR_PROPS_STRING_PRODUCT & USB_PROP_IS_RAM)
 PROGMEM
 #endif
-int usbDescriptorStringDevice[];
+int const usbDescriptorStringDevice[];
 
 extern
 #if !(USB_CFG_DESCR_PROPS_STRING_SERIAL_NUMBER & USB_PROP_IS_RAM)
 PROGMEM
 #endif
-int usbDescriptorStringSerialNumber[];
+int const usbDescriptorStringSerialNumber[];
 
 #endif /* __ASSEMBLER__ */
 
